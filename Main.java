@@ -25,15 +25,15 @@ public class Main {
     public static String AnhViet = "Anh_Viet.xml";
     public static String VietAnh = "Viet_Anh.xml";
     public static String AnhVietNew = AnhViet;
-    public static String VietAnhNew = VietAnh;
+   // public static String VietAnhNew = VietAnh;
 
-    public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException {
+ 	//  public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException {
         // write your code here
         readHistoryLog ((ArrayList<String>) historyData);
         while (true) {
             System.out.println("DICTIONARY");
             System.out.println("1.Eng-Vie");
-            System.out.println("2.Vie-Eng");
+         //   System.out.println("2.Vie-Eng");
             System.out.println("3.History");
             System.out.println("4.Exit"+ "\n");
             System.out.println("Your Option:");
@@ -84,7 +84,7 @@ public class Main {
                                 String value = scanner2.nextLine();
                                 if(addWord(key, value, (HashMap<String, String>) AVdata))
                                 {
-                                    System.out.println("Add new word successful");
+                                    System.out.println("Add new word successful"); //snap shot
                                 }
                                 else
                                 {
